@@ -1,0 +1,516 @@
+/* styles.css */
+
+/* Thiết lập font chữ và màu cho toàn bộ trang */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-image: url('img/R\ \(1\).jpg');
+  background-size: cover; /* Căn chỉnh kích thước hình ảnh để phù hợp với toàn bộ trang web */
+  background-position: center; /* Căn chỉnh vị trí của hình ảnh */
+  background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+}
+
+
+.slider {
+  width: 100%; /* Độ rộng của slider sẽ căn chỉnh tự động theo kích thước của phần tử cha */
+  overflow: hidden; /* Ẩn phần bị tràn ra ngoài slider */
+  white-space: nowrap; /* Ngăn các slide chuyển dòng */
+}
+
+.slide {
+  display: inline-block; /* Hiển thị các slide cạnh nhau */
+  width: calc(33.33% - 5px); /* Độ rộng của mỗi slide, giảm 5px để tạo ra khoảng cách */
+  margin-right: 5px; /* Khoảng cách giữa các slide */
+  vertical-align: top; /* Căn đầu của slide */
+  overflow: hidden; /* Ẩn phần bị tràn ra ngoài slide */
+}
+
+.slide img {
+  width: 100%; /* 100% chiều rộng để hình ảnh phù hợp với kích thước của slide */
+  height: 300px; /* Tự động tính toán chiều cao */
+}
+
+
+
+/* Thiết lập kích thước và căn chỉnh cho header */
+header {
+  background-color: #608fed;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Thiết lập kiểu chữ và màu cho logo */
+.logo h1 {
+  font-size: 24px;
+  color: #555;
+}
+
+/* Thiết lập kiểu chữ và màu cho các mục trong menu */
+.menu {
+  position: absolute; /* Thiết lập menu là vị trí tuyệt đối */
+  top: 85%; /* Đặt menu bắt đầu từ vị trí ở dưới thanh tìm kiếm */
+  width: 100%; /* Đảm bảo menu chiếm toàn bộ chiều rộng của header */
+  display: flex; /* Sử dụng Flexbox */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #f9f9fa;
+  margin-right: 10px; /* Tạo khoảng cách giữa các phần tử */
+  margin-bottom: 5px; 
+}
+
+
+/* Thiết lập kiểu chữ và màu cho ô tìm kiếm */
+.search input[type="text"] {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Thiết lập kiểu chữ và màu cho nút tìm kiếm */
+.search button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #3317be;
+  color: #fff;
+  border: none;
+}
+
+.product-new {
+  text-align: center; /* Canh giữa nội dung trong section */
+}
+
+.product-new h2{
+  color: white;
+}
+.product-sale {
+  text-align: center; /* Canh giữa nội dung trong section */
+}
+.product-sale h2{
+  color: white;
+}
+
+.product {
+  display: flex; /* Sử dụng flexbox để các sản phẩm nằm ngang */
+  justify-content: center; /* Căn giữa các sản phẩm theo chiều ngang */
+}
+
+.thumbnail {
+  border: 1px solid #ccc; /* Đường viền cho sản phẩm */
+  padding: 10px; /* Khoảng cách nội dung với đường viền */
+  margin: 0 10px; /* Khoảng cách giữa các sản phẩm */
+  width: 200px; /* Độ rộng của mỗi sản phẩm */
+  text-align: center; /* Canh giữa nội dung trong sản phẩm */
+  background-color: white;
+}
+
+
+/* Thiết lập kiểu chữ và màu cho giá sản phẩm giảm giá */
+.discount {
+  color: red;
+}
+
+/* Thiết lập kiểu chữ và màu cho tiêu đề và nội dung bài viết */
+.post h3, .post p {
+  color: #555;
+}
+
+/* Thiết lập kiểu chữ và màu cho footer */
+footer {
+  background-color: #0d0d0d;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+/* Thiết lập kiểu chữ và màu cho thông tin liên hệ */
+footer p {
+  font-size: 14px;
+  color: #cac5c5;
+}
+
+/* Thiết lập kiểu chữ và màu cho bản quyền */
+.footer p {
+  font-size: 12px;
+  color: #fdfcfc;
+  margin-top: 10px;
+}
+/* Định dạng phần tìm kiếm */
+.search-wrapper {
+  display: flex;
+  margin-left: auto;
+  justify-content: center; /* Căn giữa phần tìm kiếm */
+  align-items: center; /* Căn dọc giữa phần tìm kiếm */
+  width: 60%; /* Độ rộng là 50% của trang */
+  height: 60px; /* Chiều cao của phần tìm kiếm */
+  margin: 0 auto; /* Canh giữa phần tìm kiếm */
+  position: relative; /* Đặt phần tìm kiếm là vị trí tương đối để căn chỉnh vị trí của nút */
+}
+
+/* Định dạng ô nhập tìm kiếm */
+.search-wrapper input[type="text"] {
+  flex: 1; /* Ô nhập tìm kiếm mở rộng để lấp đầy không gian còn lại */
+  padding: 5px; /* Khoảng cách giữa nội dung và viền input */
+  border-radius: 5px; /* Bo tròn viền input */
+  border: 1px solid #ccc; /* Viền input */
+  height: 60%; /* Chiều cao là 100% của phần tìm kiếm */
+}
+
+/* Định dạng nút tìm kiếm */
+.search-wrapper button[type="submit"] {
+  padding: 0; /* Loại bỏ padding để hình ảnh nút tìm kiếm không có khoảng trống */
+  background-color: transparent; /* Xóa màu nền */
+  border: none; /* Xóa viền */
+  position: absolute; /* Đặt nút tìm kiếm là vị trí tuyệt đối để căn chỉnh */
+  right: 5px; /* Căn chỉnh nút tìm kiếm sang phải */
+  cursor: pointer; /* Hiển thị con trỏ khi di chuột vào nút */
+  height: 100%; /* Chiều cao là 100% của phần tìm kiếm */
+}
+
+/* Định dạng hình ảnh biểu tượng */
+.search-wrapper button[type="submit"] img {
+  width: auto; /* Đảm bảo chiều rộng của hình ảnh được tự động điều chỉnh */
+  height: 60%; /* Chiều cao là 100% của phần tìm kiếm */
+ 
+}
+/* Định dạng phần logo */
+.logo {
+  margin-right: 10px;
+  margin-right: auto; /* Khoảng cách giữa logo và thanh tìm kiếm */
+}
+
+/* Định dạng hình ảnh logo */
+.logo img {
+  width: 180px; /* Đặt chiều rộng của logo */
+  height: 180px; /* Đảm bảo tỷ lệ khung hình được bảo toàn */
+  background-color: #0e3d9a; /* Chọn màu đen hoặc màu phù hợp với nền của trang web của bạn */
+  mix-blend-mode: multiply;
+
+}
+.logo h2 {
+  color: white; /* Đặt màu chữ thành trắng */
+  margin: 0; /* Loại bỏ margin mặc định */
+  font-family: Arial, sans-serif;
+}
+.cart {
+  margin-right: 10px;
+  margin-right: auto; /* Khoảng cách giữa logo và thanh tìm kiếm */
+ 
+}
+
+/* Định dạng hình ảnh logo */
+.cart img {
+  width: 60px; /* Đặt chiều rộng của logo */
+  height: 60px; /* Đảm bảo tỷ lệ khung hình được bảo toàn */
+ 
+}
+.product-category ul {
+  list-style: none; /* Ẩn các dấu đầu dòng */
+  padding: 0; /* Loại bỏ padding mặc định */
+  display: flex; /* Sử dụng flexbox để mục danh mục nằm ngang */
+  flex-wrap: wrap; /* Cho phép các mục dãn ra nhiều dòng nếu không khớp với chiều rộng của container */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  
+}
+.product-category h2{
+  color:white;
+}
+
+.product-category li {
+  border: 1px solid #ccc; /* Đường viền cho từng danh mục */
+  padding: 10px; /* Khoảng cách nội dung với đường viền */
+  margin-right: 10px; /* Khoảng cách giữa các danh mục */
+  margin-bottom: 10px; /* Khoảng cách giữa các danh mục */
+  background-color: white;
+}
+.product-category li a {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: inherit; /* Kế thừa màu chữ */
+  
+}
+.product-category img {
+  width: 150px; /* Đặt chiều rộng của hình ảnh */
+  height: 100px; /* Đảm bảo tỷ lệ khung hình tự động */
+  display: block; /* Hiển thị hình ảnh là một khối (block) để có thể căn chỉnh kích thước */
+  margin-bottom: 10px; /* Khoảng cách dưới hình ảnh */
+}
+/* Loại bỏ gạch chân của nút */
+.btn-view {
+  text-decoration: none;
+}
+
+/* Tạo khung cho nút và thiết lập màu nền */
+.btn-view {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #0077cc; /* Màu xanh biển */
+  color: #0077cc; /* Màu chữ xanh biển */
+  border-radius: 4px; /* Bo góc */
+  transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi màu */
+}
+
+/* Hiệu ứng khi di chuột qua nút */
+.btn-view:hover {
+  background-color: #0077cc; /* Màu nền xanh biển khi di chuột qua */
+  color: #fff; /* Màu chữ trắng khi di chuột qua */
+}
+.post {
+  border: 2px solid #ccc; /* Đặt viền cho phần bài viết */
+  padding: 10px; /* Tạo khoảng cách giữa nội dung và viền */
+  margin-bottom: 20px; /* Tạo khoảng cách giữa các phần bài viết */
+  background-color:white;
+}
+
+.post h3 {
+  color: #007bff; /* Đổi màu chữ của tiêu đề */
+}
+.post-new h2{
+  color:white;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container h1 {
+  text-align: center;
+  color:black;
+}
+
+.filter-sort {
+  margin-bottom: 20px;
+}
+
+.filter-sort select {
+  margin-right: 10px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: calc(33.33% - 20px); /* 33.33% của container, trừ đi khoảng cách giữa các sản phẩm */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+}
+
+.product-card p {
+  font-weight: bold;
+}
+
+.button-card a{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.product-card button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+.product-card {
+  background-color: white; /* Đổi màu nền thành trắng */
+}
+
+.button-group {
+  display: flex; /* Hiển thị các nút ngang hàng */
+  justify-content: space-between; /* Canh chỉnh hai nút cách nhau ở hai bên */
+}
+
+.button-group button {
+  width: 48%; /* Đảm bảo nút có kích thước phù hợp và để chúng ngang hàng */
+}
+.product-detail {
+  max-width: 800px; /* Đóng khung */
+  margin: 0 auto; /* Căn giữa */
+  padding: 20px; /* Khoảng cách với lề trang */
+  background-color: #fff; /* Đổi màu nền thành trắng */
+  border-radius: 10px; /* Bo tròn góc */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+.product-info {
+  margin-bottom: 20px; /* Khoảng cách giữa thông tin sản phẩm và chi tiết */
+}
+
+.product-details {
+  margin-bottom: 20px; /* Khoảng cách giữa chi tiết sản phẩm và sản phẩm cùng loại */
+}
+
+.product-details ul {
+  list-style-type: none; /* Ẩn dấu chấm của danh sách */
+  padding: 0; /* Xóa khoảng cách đệm của danh sách */
+}
+
+.product-details li {
+  margin-bottom: 5px; /* Khoảng cách giữa các mục trong danh sách */
+}
+
+.same-category-products {
+  display: flex; /* Sắp xếp các sản phẩm cùng loại theo chiều ngang */
+  justify-content: space-between; /* Canh giữa các sản phẩm */
+}
+
+.product-card {
+  width: 30%; /* Độ rộng của mỗi sản phẩm */
+  padding: 10px; /* Khoảng cách bên trong của mỗi sản phẩm */
+  border: 1px solid #ddd; /* Đường viền */
+  border-radius: 5px; /* Bo tròn góc */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+.product-card img {
+  max-width: 100%; /* Ảnh sản phẩm không vượt quá độ rộng của phần tử cha */
+  border-radius: 5px; /* Bo tròn góc */
+}
+
+.product-card h4 {
+  margin-top: 10px; /* Khoảng cách giữa tên sản phẩm và giá */
+}
+
+.product-card p {
+  margin: 5px 0; /* Khoảng cách giữa các dòng trong phần giá */
+}
+.same-category-products {
+  max-width: 800px; /* Đóng khung */
+  margin: 20px auto; /* Căn giữa */
+  padding: 20px; /* Khoảng cách với lề trang */
+  background-color: #fff; /* Đổi màu nền thành trắng */
+  border-radius: 10px; /* Bo tròn góc */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+.same-category-products h3 {
+  margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và các sản phẩm */
+}
+
+.product-card {
+  width: calc(33.33% - 20px); /* Độ rộng của mỗi sản phẩm với khoảng cách giữa */
+  margin-right: 20px; /* Khoảng cách giữa các sản phẩm */
+  padding: 10px; /* Khoảng cách bên trong của mỗi sản phẩm */
+  border: 1px solid #ddd; /* Đường viền */
+  border-radius: 5px; /* Bo tròn góc */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+  float: left; /* Đặt các sản phẩm vào cùng một hàng */
+}
+
+.product-card:last-child {
+  margin-right: 0; /* Loại bỏ khoảng cách bên phải của sản phẩm cuối cùng */
+}
+
+.product-card img {
+  max-width: 100%; /* Ảnh sản phẩm không vượt quá độ rộng của phần tử cha */
+  border-radius: 5px; /* Bo tròn góc */
+}
+
+.product-card h4 {
+  margin-top: 10px; /* Khoảng cách giữa tên sản phẩm và giá */
+}
+
+.product-card p {
+  margin: 5px 0; /* Khoảng cách giữa các dòng trong phần giá */
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-form h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+.product .thumbnail img {
+  width: 100%; /* Chỉnh kích thước hình ảnh để tự động điều chỉnh kích thước theo phần tử cha */
+  height: 150px; /* Cho phép tỷ lệ chiều cao được tự động tính toán dựa trên tỷ lệ chiều rộng */
+  display: block; /* Loại bỏ khoảng trống dư thừa dưới hình ảnh */
+  border-radius: 5px; /* Bo tròn góc cho hình ảnh */
+}

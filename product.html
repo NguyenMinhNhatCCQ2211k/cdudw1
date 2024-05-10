@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <!-- Định dạng CSS cho danh sách sản phẩm -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/blue-logo-vector-4.png" alt="logo">
+            <h2>Shop online</h2>
+        </div>
+        <div class="search-wrapper">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button type="submit"><img src="img/OIP.jpg" alt="Search"></button>
+        </div>
+        
+        
+        <nav class="menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="product.html">Sản phẩm</a>
+            <a href="#">Dịch vụ</a>
+            <a href="contact.html">Liên hệ</a>
+            <div class="login">
+                <a href="#">Đăng nhập</a>
+            </div>
+        </nav>
+        
+        <div class="cart">
+            <a href="#">
+                <img src="img/cart-png-clipart-icon-gio-hang-115630026513wwdve21pi.png" alt="Giỏ hàng">
+            </a>
+        </div>
+        
+    </header>
+    <div class="container">
+        <h1>Danh sách sản phẩm</h1>
+        <div class="filter-sort">
+            <div class="filter">
+                <label for="price-filter" style="color: white;">Chọn giá:</label>
+                <select id="price-filter">
+                    <option value="0">Tất cả giá</option>
+                    <option value="1">Dưới $50</option>
+                    <option value="2">$50 - $100</option>
+                    <option value="3">Trên $100</option>
+                </select>
+            
+                <label for="type-filter" style="color: white;">Chọn loại:</label>
+                <select id="type-filter">
+                    <option value="0">Tất cả loại</option>
+                    <option value="1">Laptop</option>
+                    <option value="2">Điện thoại</option>
+                    <option value="3">Máy ảnh</option>
+                    <option value="4">Thiết bị điện tử khác</option>
+                </select>
+            </div>
+            
+            <div class="product-list">
+                <!-- Mỗi sản phẩm được bao bởi một thẻ div với class "product-card" -->
+                <div class="product-card">
+                    <img src="img/OIP (4).jpg" alt="">
+                    <h3>Tên sản phẩm 1</h3>
+                    <p>Giá: $99</p>
+                    <div class="button-group">
+                        <a href="product_detail.html" class="btn-view">Xem sản phẩm</a>
+                        <button>Mua Ngay</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/OIP (3).jpg" alt="">
+                    <h3>Tên sản phẩm 2</h3>
+                    <p>Giá: $79</p>
+                    <div class="button-group">
+                        <a href="product_detail.html" class="btn-view">Xem sản phẩm</a>
+                        <button>Mua Ngay</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/R.jpg" alt="">
+                    <h3>Tên sản phẩm 3</h3>
+                    <p>Giá: $99</p>
+                    <div class="button-group">
+                        <a href="product_detail.html" class="btn-view">Xem sản phẩm</a>
+                        <button>Mua Ngay</button>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+</div>
+
+
+        </body>
+</html>
+<footer>
+    <div class="footer">
+        <p>Thông tin liên hệ: Địa chỉ, Số điện thoại, Email</p>
+    </div>
+    <div class="copyright">
+        <p>&copy; Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p></div></footer>

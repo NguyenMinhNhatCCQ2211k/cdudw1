@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <!-- Thêm thẻ style hoặc link tới file CSS để tạo kiểu cho trang -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/blue-logo-vector-4.png" alt="logo">
+            <h2>Shop online</h2>
+        </div>
+        <div class="search-wrapper">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button type="submit"><img src="img/OIP.jpg" alt="Search"></button>
+        </div>
+        
+        
+        <nav class="menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="product.html">Sản phẩm</a>
+            <a href="#">Dịch vụ</a>
+            <a href="contact.html">Liên hệ</a>
+            <div class="login">
+                <a href="#">Đăng nhập</a>
+            </div>
+        </nav>
+        
+        <div class="cart">
+            <a href="#">
+                <img src="img/cart-png-clipart-icon-gio-hang-115630026513wwdve21pi.png" alt="Giỏ hàng">
+            </a>
+        </div>
+        
+    </header>
+    <div class="container">
+        <h2>Google Map</h2>
+        <div id="google-map">
+            <img src="img/Screenshot 2024-05-10 165311.png" alt="">
+        </div>
+
+        <!-- Thông tin liên hệ -->
+        <div class="contact-info">
+            <h2>Thông tin liên hệ</h2>
+            <p>246 Đỗ Xuân Hợp, P, Quận 9, Thành phố Hồ Chí Minh, Vietnam</p>
+            <p>Điện thoại: 0823456789</p>
+            <p>Email: acd@gmail.com</p>
+        </div>
+
+        <!-- Biểu mẫu liên hệ -->
+        <div class="contact-form">
+            <h2>Gửi tin nhắn cho chúng tôi</h2>
+            <form action="/submit_contact_form" method="POST">
+                <input type="text" name="name" placeholder="Họ và tên" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Nội dung tin nhắn" rows="5" required></textarea>
+                <button type="submit">Gửi</button>
+            </form>
+        </div>
+    </div>
+   
+</body>
+<footer>
+    <div class="footer">
+        <p>Thông tin liên hệ: Địa chỉ, Số điện thoại, Email</p>
+    </div>
+    <div class="copyright">
+        <p>&copy; Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        </div>
+</footer>
+</html>
